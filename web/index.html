@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="./lib/reset.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./lib/flexible.js"></script>
+</head>
+
+<body>
+
+    <audio src="./assets/bg.mp3" crossorigin="anonymous" autoplay>
+        您的浏览器不支持 audio 标签。
+    </audio>
+
+    <div class="page__loading page active">
+        <!--<div class="page__loading page">-->
+
+        <div class="page__loading-part">
+
+            <a class="page__img-placeholder loading">
+                <div class="page__img moveday"></div>
+            </a>
+        </div>
+
+        <div class="page__loading-part" style="text-align: center;">
+
+            <div class="page__loading-text">Loading...</div>
+
+            <canvas class="canvas-loading" style="display: none"></canvas>
+
+            <div class="page__loading-progress native-loading" style="display: none">
+                <div class="page__loading-now loading"></div>
+            </div>
+
+            <!--<a class="page__img-placeholder action bounceIn">
+                <div class="page__img action"></div>
+            </a>-->
+        </div>
+    </div>
+
+
+    <div class="page__video page">
+        <!--<div class="page__video page active">-->
+
+
+
+        <div class="page__video-wrap">
+        </div>
+
+        <img src="./assets/play.png" class="img-play">
+
+        <a class="page__img-placeholder action bounceIn" style="display: none;">
+            <div class="page__img action"></div>
+        </a>
+    </div>
+
+
+    <!--<div class="page__input page active">-->
+    <div class="page__input page">
+
+        <canvas class="snapshot-generator"></canvas>
+        <video muted class="snapshot-generator" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true"
+            x5-video-orientation="h5" x5-video-player-fullscreen="false" x5-video-player-type="h5"></video>
+
+        <div class="page__input-wrap">
+
+            <div class="page__input-groups">
+
+                <div class="page__input-group">
+
+                    <input type="text" placeholder="昵称" id="inputName" />
+                    <input type="text" placeholder="联系方式" maxlength="11" id="inputPhone" />
+                    <input type="text" placeholder="城市" id="inputCity" />
+                </div>
+
+                <img src="./assets/roll.gif" class="page__input-img">
+            </div>
+
+            <div class="page__upload-text">
+                <span>拍一段视频给我吧</span><br>
+                <span class="tips">视频请控制在三分钟以内</span>
+            </div>
+
+            <div class="page__upload-wrap">
+
+                <div class="page__upload-img-wrap">
+                    <img src="./assets/input.png" class="page__upload-img">
+                </div>
+
+            </div>
+
+            <div class="page__loading-progress">
+                <div class="page__loading-now uploading"></div>
+            </div>
+
+            <a class="page__input-submit">提交</a>
+        </div>
+    </div>
+
+    <!--<div class="page__end page active">-->
+    <div class="page__end page">
+        <img src="./assets/show.jpeg" width="100%">
+    </div>
+
+    <!--<script src="./lib/jquery.js"></script>-->
+    <script src="./lib/jq.11.js"></script>
+    <script src="./lib/jq.mb.js"></script>
+    <script src="./lib/preload.js"></script>
+    <script src="./lib/uploader.js"></script>
+    <script src="./lib/url.js"></script>
+    <scirpt src="./lib/lightloader.js"></scirpt>
+    <script src="./index.js?x=1"></script>
+</body>
+
+</html>

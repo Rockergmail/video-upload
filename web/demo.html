@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cankao {
+            /*width: 16px;*/
+            width: 16px;
+            height: 16px;
+            background: pink;
+            color: yellow;
+        }
+
+        .fuck {
+            transform: translate3d(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cankao-wrap">
+        <span class="cankao fuck">字体大小参考</span>
+
+        <div class="cankao damn"></div>
+        
+        <video id="videoPlayer" controls src="/bgvideo.mp4"></video>
+
+    </div>
+    <script src="./lib/jq.11.js"></script>
+    <script>
+
+        $("#videoPlayer").get(0).play();
+    </script>
+</body>
+
+</html>
